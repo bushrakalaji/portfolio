@@ -5,7 +5,7 @@
   outline: none;
   text-decoration: none;
   border: none;
-  text-transform: capitalize;
+
   transition: all 0.2s linear;
   list-style: none;
 }
@@ -43,14 +43,28 @@ h2 {
 .about-me {
   max-width: 400px;
 }
-.about-me p {
-  font-size: 20px;
+.about-span {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  gap: 10px;
+}
+.fa-earth-asia {
+  color: #006075;
+}
+.fa-location-pin {
+  color: rgb(68, 137, 0);
+}
+.fa-school {
+  color: #9b8900;
+}
+.fa-face-grin-hearts {
+  color: #a52c00;
 }
 body,
 main {
   margin: 0 auto;
   font-family: "semplicitapro";
-  text-transform: capitalize;
 }
 
 .sosial-media {
@@ -261,15 +275,16 @@ footer {
 }
 
 .pst-content h2 {
-  font-size: 20px;
-  color: var(--prpl-font);
+  font-size: 23px;
 }
 
 .pst-content p {
-  font-size: 15px;
+  font-size: 20px;
   color: #000;
   line-height: 2;
   padding: 15px 0;
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 .pst-btn {
@@ -280,29 +295,24 @@ footer {
   font-size: 1.2rem;
   font-weight: 500;
 }
+.git-btn {
+  background-color: #7efbff;
+}
+.view-btn {
+  background-color: #7eff87;
+}
 .pst-btn:hover {
   box-shadow: 1px 1px 2px 0px rgb(0 0 0 / 20%);
+  background-color: #ffebf7;
 }
 
-.pst-icon,
-.details-date {
+.btn-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 5px;
   margin-top: 20px;
-  padding-top: 15px;
-  border-top: 1px solid #d7e1fb;
 }
 
-.pst-icon span,
-.details-date span {
-  font-size: 14px;
-  color: #777;
-}
-.pst-icon i,
-.details-date i {
-  padding-right: 5px;
-}
 @keyframes big-spin {
   0% {
     transform: rotate(0deg);

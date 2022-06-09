@@ -17,8 +17,10 @@ async function getResults() {
     <div class="pst-img"><a href="${project.acf.link}"><img src="${project.acf.image}" alt="${project.acf.title}"/></a></div>
         <div class="pst-content"><h2 class="pst-title">${project.acf.title}</h2>
            <span class="head-content"><p class= "pst-paragraf">${project.acf.discription}</p></span>
-            <a href="details.html?id=${project.acf.link}" class="pst-btn">github repo</a>
-            <a href="details.html?id=${project.acf.link}" class="pst-btn">view site</a>
+           <div class="btn-container">
+            <a href="${project.acf.github}" class="pst-btn git-btn">Github repo</a>
+            <a href="${project.acf.link}" class="pst-btn view-btn">Visit site</a>
+            </div>
         </div>
  </div>
  </div>
