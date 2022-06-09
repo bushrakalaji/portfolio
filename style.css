@@ -344,7 +344,8 @@ footer {
 }
 
 @media (max-width: 1202px) {
-  .first-section {
+  .first-section,
+  .sec-section {
     padding: 2rem;
   }
   h1 {
