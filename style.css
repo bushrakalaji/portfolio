@@ -198,6 +198,16 @@ header {
   border-bottom: 10px solid #f05a23;
   margin-bottom: 5px;
 }
+.img3-border {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 50%;
+  border-right: 10px solid #5d23f0;
+  border-top: 10px solid #5d23f0;
+  /* border-left: 10px solid #f0d823; */
+  border-bottom: 10px solid #5d23f0;
+  margin-bottom: 5px;
+}
 .img2-border:hover {
   animation: happy 50s linear infinite;
 }
