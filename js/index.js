@@ -7,11 +7,11 @@ async function getResults() {
   try {
     const responce = await fetch(url);
     const result = await responce.json();
-  
+
     console.log(result);
 
-    result.forEach(function(project){
-    myWork.innerHTML += `
+    result.forEach(function (project) {
+      myWork.innerHTML += `
     <div class="box-container">
     <div class="post">
     <div class="pst-img"><a href="${project.acf.link}"><img src="${project.acf.image}" alt="${project.acf.title}"/></a></div>
@@ -24,9 +24,10 @@ async function getResults() {
         </div>
  </div>
  </div>
-    `;})
-
-  }catch (error) {
+    `;
+    });
+  } catch (error) {
     console.log("error: ", error);
-}}
-getResults()
+  }
+}
+getResults();
